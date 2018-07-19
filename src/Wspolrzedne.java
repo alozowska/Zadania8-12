@@ -17,6 +17,12 @@ public class Wspolrzedne {
             System.out.println("Punkt (" + punkt.getX() + "," + punkt.getY() + ") leży w III ćwiartce układu współrzędnych");
         } else if (x > 0 && y < 0) {
             System.out.println("Punkt (" + punkt.getX() + "," + punkt.getY() + ") leży w IV ćwiartce układu współrzędnych");
+        }else if (x==0 && y==0){
+            System.out.println("Punkt (" + punkt.getX() + "," + punkt.getY() + ") leży w środku układu współrzędnych");
+        }else if (x==0&& y!=0){
+            System.out.println("Punkt (" + punkt.getX() + "," + punkt.getY() + ") leży na osi Y");
+        }else if (y==0 && x!=0){
+            System.out.println("Punkt (" + punkt.getX() + "," + punkt.getY() + ") leży na osi X");
         }
     }
 }
